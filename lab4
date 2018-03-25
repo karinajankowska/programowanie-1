@@ -1,0 +1,23 @@
+#include <stdio.h>
+#define temperatura wrzenia 100
+#define temperatura zamarzania 0
+#define ciecz 0-99
+
+int main()
+{
+
+    double temp;
+    printf("Wpisz temperaturę wyrażoną w stopniach Celsjusza: \n");
+scanf("%lf", &temp);
+if (temp >= 0 && temp < 100) {
+    printf( "Woda w temperaturze %lf stopni Celsjusza jest cieczą.\n", temp);
+} if (temp >= 100) {
+    printf ("Woda w temperaturze %lf stopni Celsjusza jest gazem.\n", temp);
+}
+if (temp <=0) {
+    printf("Woda w temperaturze %lf stopni Celsjusza jest lodem.\n", temp);
+
+}
+
+    return 0;
+}
