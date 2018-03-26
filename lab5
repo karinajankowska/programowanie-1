@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    char reakcja, oddychanie;
+    printf("Czy reaguje\n");
+scanf("%c", & reakcja);
+printf("%c", reakcja);
+printf("Czy oddycha\n");
+scanf("%c", & oddychanie);
+if((reakcja== 'n')&& (oddychanie== 'n')){ 
+printf("Wykonuj RKO");
+}else if ((reakcja== 'n')&&(oddychanie== 't')){
+    printf("Pozycja bezpieczna");
+}else if ((reakcja== 't')&&(oddychanie== 't')){
+    printf("Pozycja bezpieczna");
+}
+    return 0;
+}
