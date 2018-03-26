@@ -2,7 +2,7 @@
 
 int main()
 {
-    char reakcja, oddychanie;
+    char reakcja, oddychanie, AED;
     printf("Czy reaguje\n");
 scanf("%c", & reakcja);
 printf("%c", reakcja);
@@ -14,6 +14,11 @@ printf("Wykonuj RKO");
     printf("Pozycja bezpieczna");
 }else if ((reakcja== 't')&&(oddychanie== 't')){
     printf("Pozycja bezpieczna");
+    printf ("Czy masz AED\n");
+    scanf("%c", & AED);
+    printf ("%c", AED);
+ if ((AED== 'n')&&(oddychanie== 'n'))
+    printf ("Dalej wykonuj RKO\n");
 }
     return 0;
 }
