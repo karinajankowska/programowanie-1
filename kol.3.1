@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+
+int main()
+{
+    char warunek = 'y';
+    while (warunek == 'y'){
+     float in, ft, cm;
+        printf ("Miara w centymetrach wynosi: \n");
+        scanf ("%f", &cm);
+       
+      in = 2.54;
+      ft = 12;
+     
+        printf ("%f centymetra to %f cala \n", cm, in);
+        printf ("%f centymetra to %f stopy \n", cm , ft );
+        printf ("Czy chcesz kontynuować?\n");
+        scanf (" %c", &warunek);
+        //warunek = getchar();
+    }
+   
+
+    return 0;
+}
