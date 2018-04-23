@@ -9,11 +9,13 @@ int main()
         printf ("Miara w centymetrach wynosi: \n");
         scanf ("%f", &cm);
        
-      in = 2.54;
-      ft = 12;
      
-        printf ("%f centymetra to %f cala \n", cm, in);
-        printf ("%f centymetra to %f stopy \n", cm , ft );
+      
+        cm = (cm/2.54);
+        printf ("CM do IN: %.2f\n", cm, (cm/2.54));
+      cm =(cm/2.54*12);
+        printf ("CM do FT: %.2f\n", cm, (cm/2.54*12));
+        
         printf ("Czy chcesz kontynuować?\n");
         scanf (" %c", &warunek);
         //warunek = getchar();
