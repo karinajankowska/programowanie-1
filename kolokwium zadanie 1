@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main()
+{
+    int tab1[10];
+    int tab2[13];
+  
+  int i;
+    int licznik;
+    
+    int rozmiar1 = sizeof(tab1)/sizeof(int);
+    int rozmiar2 = sizeof(tab2)/sizeof(int);
+    
+    for(licznik=0; licznik<rozmiar1; licznik++) {
+        tab1[licznik]=licznik*2;
+    
+    }
+     for(licznik=0; licznik<rozmiar2; licznik++) {
+ 
+        tab2[licznik]=licznik*2+1;
+    }
+    printf ("Rozmiar tablicy to %d\n", rozmiar1);
+     printf ("Rozmiar tablicy to %d\n", rozmiar2);
+    printf("Wpisywanie danych:\n");
+    for(licznik=0; licznik<rozmiar1; licznik++) {
+    }
+    for(licznik=0; licznik<rozmiar2;licznik++) {   
+         printf("%d\t",tab1[licznik]);
+         printf ("%d\t", tab2[licznik]);
+    }
+
+    return 0;
+}
+
